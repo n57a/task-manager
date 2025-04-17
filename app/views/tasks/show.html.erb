@@ -1,0 +1,11 @@
+<h1>Task Details</h1>
+
+<div class="task">
+  <h2><%= @task.title %></h2>
+  <p><strong>Description:</strong> <%= @task.description %></p>
+  <p><strong>Due Date:</strong> <%= @task.due_date.strftime('%B %d, %Y %H:%M') %></p>
+  <p><strong>Status:</strong> <%= @task.completed ? 'Completed' : 'Pending' %></p>
+</div>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>
