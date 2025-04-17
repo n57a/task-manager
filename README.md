@@ -1,11 +1,11 @@
-# Task Manager
+## 📋 User Stories
+```markdown
+- [x] As a user, I can create tasks _(completed)_
+- [ ] As a user, I can delete tasks _(pending)_
+- [ ] As a user, I can set due dates _(planned for v1.1)_
 
-## User Stories
-- ✅ As a user, I can create tasks
-- ⏳ As a user, I can mark tasks complete (WIP)
-- ❌ As a user, I can set due dates
-
-## Setup
+## 🛠 Development
 ```bash
-bundle install
-rails db:migrate
+# Run tests
+bundle exec rspec
+bundle exec cucumber
